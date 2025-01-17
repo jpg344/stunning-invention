@@ -39,7 +39,7 @@ jobs:
         run: echo "Die Workflow wurde durch ${{ github.event_name }} gestartet"
 
       - name: Run a one-line script
-        run: echo Hello, world!
+        run: echo Hello, ${{ vars.NAME }} !
 
       - name: Tree Befehl
         run: tree
