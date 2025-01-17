@@ -41,6 +41,9 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, ${{ vars.NAME }} !
 
+      - name: Repo-Variablen
+        run: echo "${{ toJson(vars) }}"
+
       - name: Tree Befehl
         run: tree
 
